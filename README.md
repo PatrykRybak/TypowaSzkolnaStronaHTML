@@ -1,5 +1,7 @@
 # TypowaSzkolnaStronaHTML
 
+AKTUALNE ZADANIE: pętle w PHP
+
 Szablon typowej responsywnej strony używanej na zawodowych w szkole.
 
 Szablon jest responsywny i napisany na FlexBoxach zamiast float:left;
