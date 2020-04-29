@@ -2,8 +2,6 @@
 
 AKTUALNE ZADANIE: Funkcje w PHP
 
-UWAGA - Rozwiązane zadań z funkcji znajdują sią w innym repozytorium. W tym repo jest zadanie pętle PHP.
-
 Szablon typowej responsywnej strony używanej na zawodowych w szkole.
 
 Szablon jest responsywny i napisany na FlexBoxach zamiast float:left;
