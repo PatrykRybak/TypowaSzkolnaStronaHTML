@@ -2,38 +2,53 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8">
-    <title>Ustaw Nazwę!</title>
-    <meta name="author" content="Imie Nazwisko 3infB">
+    <title>Funkcje PHP</title>
+    <meta name="author" content="Patryk Rybak 3infB">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
+    <div id="ScreenWindow">
+      <img id="scr" src="" alt="Error">
+    </div>
     <header>
-      Ustaw własny tytuł witryny!
+      Funkcje PHP
     </header>
     <main>
-      <nav>
-        <ol>
-          <a href="#link1"><li>Przykładowy link</li></a>
-          <a href="#link2"><li>Kolejny link</li></a>
-          <a href="#link3"><li>I jeszcze jeden</li></a>
-        </ol>
-      </nav>
-      <article>
-        <form action="PHP/petla.php" method="post">
-          <label>Ile razy wyświetlić imię:</label>
-          <input type="number" name="NumOfName" placeholder="1...">
-          <label>Ile razy wyświetlić nazwisko:</label>
-          <input type="number" name="NumOfSurname" placeholder="2...">
-          <input type="submit" value="Prześlij">
-        </form>
-      </article>
-      <aside>
-        <img src="IMG/example.png" alt="Error!">
-      </aside>
+      <div class="Zadanie">
+        <div class="NrZad"> Zadanie 1</div>
+        <div class="Polecenie">
+          <form action="PHP/funkcje.php" method="post">
+            <input type="submit" name="zad1" value="Zadanie 1">
+          </form>
+        </div>
+        <div class="screen" id="zad1">Screen do zadania</div>
+      </div>
+      <div class="Zadanie">
+        <div class="NrZad"> Zadanie 2</div>
+        <div class="Polecenie">
+          <form action="PHP/funkcje.php" method="post">
+            <input type="number" name="nwl1" placeholder="1...">
+            <input type="number" name="nwl2" placeholder="2...">
+            <input type="number" name="nwl3" placeholder="3...">
+            <input type="submit" name="zad2" value="Zadanie 2">
+          </form>
+        </div>
+        <div class="screen" id="zad2">Screen do zadania</div>
+      </div>
+      <div class="Zadanie">
+        <div class="NrZad"> Zadanie 3</div>
+        <div class="Polecenie">
+          <form action="PHP/funkcje.php" method="post">
+            <input type="number" name="fib" placeholder="123...">
+            <input type="submit" name="zad3" value="Zadanie 3">
+          </form>
+        </div>
+        <div class="screen" id="zad3">Screen do zadania</div>
+      </div>
     </main>
     <footer>
-      &copy; 2020 - Templatka do nauki HTML.
+      &copy; 2020 - Patryk Rybak 3infB.
     </footer>
   </body>
   <script type="text/javascript" src="JS/script.js"></script>

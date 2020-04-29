@@ -1,112 +1,95 @@
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
 html{
   background-color: #eee;
   font-size: 1vw;
 }
-*{
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  font-family: verdana;
-}
 body{
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: verdana;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 header{
-  height: 15%;
+  height: 15vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: tomato;
+  background-color: #7588ff;
   color: #fff;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 3rem;
 }
 main{
-  height: 80%;
+  height: 80vh;
+  width: 100%;
   background-color: #ddd;
   display: flex;
   flex-direction: row;
 }
+.Zadanie{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.NrZad{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.Polecenie{
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.screen{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #343434;
+  font-style: italic;
+}
+.screen:hover{
+  cursor: pointer;
+  color: black;
+}
 footer{
-  height: 5%;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000;
   color: #fff;
 }
-nav{
-  flex: 1;
-  background-color: #ccc;
-}
-article{
-  flex: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-}
-aside{
-  flex: 1;
-  display: flex;
-  align-items: center;
-  background-color: #ccc;
-}
-ol{
-  list-style-type: none;
-  padding: 0px;
-  text-align: center;
-  overflow: auto; /*Pozwoli na scrolowanie listy*/
-}
-li{
-  width: 90%;
-  height: 7%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  border-radius: 3px;
-  background-color: #bbb;
-  margin-top: 7%;
-  cursor: pointer;
-}
-li:hover{
-  background-color: #999;
-}
-a{
-  border: none;
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: #121212;
-}
-a:hover{
-  color: #eee;
-}
-img{
-  height: auto;
-}
 form{
-  width: 40%;
+  width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-label{
-  height: 7%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.3rem;
 }
 input[type=text] {
-  width: 75%;
+  width: 85%;
   height: 7%;
   box-sizing: border-box;
   outline: none;
@@ -115,7 +98,7 @@ input[type=text] {
   margin-bottom: 7%;
 }
 input[type=number] {
-  width: 75%;
+  width: 85%;
   height: 7%;
   box-sizing: border-box;
   outline: none;
@@ -124,11 +107,11 @@ input[type=number] {
   margin-bottom: 7%;
 }
 input[type=submit] {
-  width: 75%;
-  height: 10%;
+  width: 55%;
+  height: 15%;
   border: none;
   font-size: 1.5rem;
-  background-color:tomato;
+  background-color:#7588ff;
   border-radius: 5px;
   color: #eee;
 }
@@ -140,4 +123,23 @@ input[type=submit]:hover {
   -o-filter: brightness(1.2);
   -ms-filter: brightness(1.2);
   filter: brightness(1.2);
+}
+#ScreenWindow{
+  display: none;
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.5s;
+}
+img{
+  width: 50%;
+  height: auto;
 }
